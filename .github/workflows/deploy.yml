@@ -16,8 +16,6 @@ jobs:
         uses: actions/checkout@main
       - name: CD functions
         run: cd functions
-      - name: Install Dependencies
-        run: npm install
       - name: Build
         run: npm run build
       - name: Archive Production Artifact
