@@ -40,6 +40,9 @@ jobs:
           name: telebot
           path: functions/lib/index.js
 
+      - name: Install
+        run: cd functions && npm install
+
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
