@@ -8,21 +8,21 @@ on:
   workflow_dispatch:
   
 jobs:
-  build:
-    name: Build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Repo
-        uses: actions/checkout@main
-      - name: CD functions
-        run: cd functions
-      - name: Build
-        run: npm run build
-      - name: Archive Production Artifact
-        uses: actions/upload-artifact@main
-        with:
-          name: dist
-          path: dist
+  # build:
+  #   name: Build
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Checkout Repo
+  #       uses: actions/checkout@main
+  #     - name: CD functions
+  #       run: cd functions
+  #     - name: Build
+  #       run: npm run build
+  #     - name: Archive Production Artifact
+  #       uses: actions/upload-artifact@main
+  #       with:
+  #         name: dist
+  #         path: dist
   deploy:
     name: Deploy
     needs: build
