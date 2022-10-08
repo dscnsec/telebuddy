@@ -8,33 +8,33 @@ on:
   workflow_dispatch:
   
 jobs:
-  # build:
-  #   name: Build
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - name: Checkout Repo
-  #       uses: actions/checkout@main
-  #     - name: CD functions
-  #       run: cd functions
-  #     - name: Build
-  #       run: npm run build
-  #     - name: Archive Production Artifact
-  #       uses: actions/upload-artifact@main
-  #       with:
-  #         name: dist
-  #         path: dist
-  deploy:
-    name: Deploy
-    # needs: build
+  build:
+    name: Build
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
         uses: actions/checkout@main
-      # - name: Download Artifact
-      #   uses: actions/download-artifact@main
-      #   with:
-      #     name: dist
-      #     path: dist
+      - name: Install
+        run: cd functions && npm install
+      - name: Build
+        run: cd functions && npm run build
+      - name: Archive Production Artifact
+        uses: actions/upload-artifact@main
+        with:
+          name: dist
+          path: dist
+  deploy:
+    name: Deploy
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@main
+      - name: Download Artifact
+        uses: actions/download-artifact@main
+        with:
+          name: dist
+          path: dist
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
