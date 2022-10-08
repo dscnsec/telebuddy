@@ -25,7 +25,7 @@ jobs:
         uses: actions/upload-artifact@main
         with:
           name: telebot
-          path: functions/lib/index.js
+          path: functions/lib
   deploy:
     name: Deploy
     needs: build
@@ -38,7 +38,7 @@ jobs:
         uses: actions/download-artifact@main
         with:
           name: telebot
-          path: functions/lib/index.js
+          path: functions/lib
 
       - name: Install
         run: cd functions && npm install
