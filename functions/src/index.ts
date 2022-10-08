@@ -10,7 +10,7 @@ bot.catch((err: any, ctx: { reply: (arg0: string, arg1: any) => any; updateType:
     return ctx.reply(`Ooops, encountered an error for ${ctx.updateType}`, err)
 })
 
-bot.command('/start', (ctx: { reply: (arg0: string) => any; }) => ctx.reply('Hello! Send any message and I will copy it.'))
+bot.command('/start', (ctx: { reply: (arg0: string) => any; }) => ctx.reply('Hello! Send a message and I will copy it.'))
 
 bot.on('message', (ctx: {
     telegram: { sendCopy: (arg0: any, arg1: any) => any; };
