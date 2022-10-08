@@ -19,9 +19,12 @@ bot.command('/hacktoberfest', (ctx: { reply: (arg0: string) => any; }) =>
     We are hosting New repos these time from GDSC-NSEC, For more info, go thorugh the readme section of the repo🤞🏻
     All these are begineer friendly repo's. From freshman to final year, anyone can contruibute🫂💓
     
-    How to contruibute?
+    List of Repositories-
+    - TeleBuddy- https://github.com/dscnsec/telebuddy
+    - Android-Compose-Camp-Trivia-Solutions- https://github.com/dscnsec/Android-Compose-Camp-Trivia-Solutions
+    - We will be adding new repositories soon😉.
     
-    - Here is the list of repos open for contributions- https://github.com/orgs/dscnsec/repositories.
+    How to contruibute?
     - Create an issue if you want to add any feature or you get any bug! (You can ask here also, if you are stucked up)
     - We will mark the hacktoberfest label!
     - Start working
