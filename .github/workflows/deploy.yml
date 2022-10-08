@@ -14,15 +14,18 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@main
+
       - name: Install
         run: cd functions && npm install
+
       - name: Build
         run: cd functions && npm run build
+
       - name: Archive Production Artifact
         uses: actions/upload-artifact@main
         with:
-          name: dist
-          path: dist
+          name: telebot
+          path: functions/lib/index.js
   deploy:
     name: Deploy
     needs: build
@@ -30,11 +33,13 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@main
+        
       - name: Download Artifact
         uses: actions/download-artifact@main
         with:
-          name: dist
-          path: dist
+          name: telebot
+          path: functions/lib/index.js
+
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
