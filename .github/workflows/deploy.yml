@@ -30,11 +30,11 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@main
-      - name: Download Artifact
-        uses: actions/download-artifact@main
-        with:
-          name: dist
-          path: dist
+      # - name: Download Artifact
+      #   uses: actions/download-artifact@main
+      #   with:
+      #     name: dist
+      #     path: dist
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
