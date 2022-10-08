@@ -1,3 +1,4 @@
 node_modules
 .runtimeconfig.json
 *.log
+functions/lib

@@ -13,6 +13,7 @@ Get All News Regarding `Events, workShops, Competitions and Much More!`
 
 Current Commands:
 - `/start`
+- `/hacktober`
 
 # Contributions:
 ## Local Setup
