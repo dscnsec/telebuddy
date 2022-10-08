@@ -12,9 +12,10 @@ GDSC NSEC's Official Telegram Bot!
 Get All News Regarding `Events, workShops, Competitions and Much More!`
 
 Current Commands:
+```
 - `/start`
-- `/hacktober`
-
+- `/hacktoberfest`
+```
 # Contributions:
 ## Local Setup
 Steps to set up locally:
