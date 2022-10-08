@@ -11,16 +11,20 @@ bot.catch((err: any, ctx: { reply: (arg0: string, arg1: any) => any; updateType:
 })
 
 bot.command('/start', (ctx: { reply: (arg0: string) => any; }) => ctx.reply('Hello! Send a message and I will copy it.'))
-bot.command('hacktoberfest', (ctx: { reply: (arg0: string) => any; }) =>
+bot.command('/hacktoberfest', (ctx: { reply: (arg0: string) => any; }) =>
     ctx.reply(`Hello Guys,
-    Hacktoberfest is staring from tonight 12am🥳
+    Hacktoberfest has Started
     
     Wanna get amazing swags right!🌚
-    We are hosting 2 repos these time from GDSC-NSEC, For more info, go thorugh the readme section of the repo🤞🏻
+    We are hosting New repos these time from GDSC-NSEC, For more info, go thorugh the readme section of the repo🤞🏻
     All these are begineer friendly repo's. From freshman to final year, anyone can contruibute🫂💓
     
-    How to contruibute?
+    List of Repositories-
+    - TeleBuddy- https://github.com/dscnsec/telebuddy
+    - Android-Compose-Camp-Trivia-Solutions- https://github.com/dscnsec/Android-Compose-Camp-Trivia-Solutions
+    - We will be adding new repositories soon😉.
     
+    How to contruibute?
     - Create an issue if you want to add any feature or you get any bug! (You can ask here also, if you are stucked up)
     - We will mark the hacktoberfest label!
     - Start working
