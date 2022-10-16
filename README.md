@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://user-images.githubusercontent.com/38348296/194700380-35dbaaf9-7610-4b61-8806-bdb6e22dea6a.jpg" width="40%">
+<img src="https://user-images.githubusercontent.com/38348296/196018782-09b45064-1197-4ab2-9333-d5b517b6118f.gif" width="40%">
 </p>
 
 # telebuddy
