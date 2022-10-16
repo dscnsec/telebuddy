@@ -11,30 +11,32 @@ bot.catch((err: any, ctx: { reply: (arg0: string, arg1: any) => any; updateType:
 })
 
 bot.command('/start', (ctx: { reply: (arg0: string) => any; }) => ctx.reply('Hello! Send a message and I will copy it.'))
-bot.command('/hacktoberfest', (ctx: { reply: (arg0: string) => any; }) =>
-    ctx.reply(`
-    <a href="https://user-images.githubusercontent.com/38348296/194700380-35dbaaf9-7610-4b61-8806-bdb6e22dea6a.jpg"></a>
-    Hello Guys,
-    Hacktoberfest has Started
+bot.command('/hacktoberfest', (ctx: { replyWithHTML: (arg0: string) => any; }) =>
+
+    ctx.replyWithHTML(`
+    <a href="https://user-images.githubusercontent.com/38348296/196018782-09b45064-1197-4ab2-9333-d5b517b6118f.gif"></a>
+    🚨🚨Attention Freshies🚨🚨
+
+    Due to huge number of requests by 1st year students, GDSC NSEC has decided to take a session on Git and Github where we will be teaching you from the basics 🥳
+    Wait! That's not all!!!
     
-    Wanna get amazing swags right!🌚
-    We are hosting New repos these time from GDSC-NSEC, For more info, go thorugh the readme section of the repo🤞🏻
-    All these are begineer friendly repo's. From freshman to final year, anyone can contruibute🫂💓
+    .
+    .
+    .
     
-    List of Repositories-
-    - TeleBuddy- https://github.com/dscnsec/telebuddy
-    - Android-Compose-Camp-Trivia-Solutions- https://github.com/dscnsec/Android-Compose-Camp-Trivia-Solutions
-    - We will be adding new repositories soon😉.
+    We will also be showing how to contribute and participate in one of the largest ongoing Global events of  'Hacktoberfest 2022' ✨. You can grab a cool T-shirt for your contribution in Hacktoberfest 💥.
+    That's not it we have got more for you 🌚 everyone will be getting certificate of participation by which you can grab on MAR points.
     
-    How to contruibute?
-    - Create an issue if you want to add any feature or you get any bug! (You can ask here also, if you are stucked up)
-    - We will mark the hacktoberfest label!
-    - Start working
-    - Make the Pull Request.
-    - We will merge it in our repo, after reviewing the code!
+    Share this announcement with all the First year students 💫
     
-    Create 4 Pull request, and it should not be duplicate (Be careful). 
-    Congratulation's, You are eligible for swags claimation!`)
+    When and Where 
+    Sunday, 16 October · 6:00 - 8:00pm
+    Google Meet joining info
+    Video call link: https://meet.google.com/ufc-eypd-ypk
+    
+    For Queries contact:
+    Yash: 7439558508
+    Brishti: 98309 39389`)
 )
 
 
